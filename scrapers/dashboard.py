@@ -5,7 +5,6 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-import pandas as pd
 import os
 from slack import WebClient
 from slack.errors import SlackApiError
