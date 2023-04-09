@@ -19,7 +19,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install requests bs4 os
+        run: pip install requests bs4 slackclient
 
       - name: run scraper
         run: python scrapers/dashboard.py
