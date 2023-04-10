@@ -24,7 +24,6 @@ jobs:
       - name: run scraper
         env:
           slack_api_token: ${{ secrets.SLACK_API_TOKEN }}
-          repo-token: ${{secrets.REPO_TOEN}}
         run: python scrapers/dashboard.py
 
       - name: "Commit and push if it changed"
