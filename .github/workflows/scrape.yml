@@ -23,7 +23,7 @@ jobs:
 
       - name: run scraper
         env:
-          slack_api_token: ${{ secrets.SLACK_API_TOKEN }}
+          SLACK_API_TOKEN: ${{ secrets.SLACK_API_TOKEN }}
         run: python scrapers/dashboard.py
 
       - name: "Commit and push if it changed"
